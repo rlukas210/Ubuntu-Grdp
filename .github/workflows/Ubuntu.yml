@@ -47,12 +47,12 @@ jobs:
 
     - name: Installing Desktop Environment (wait for 10 min)
       run: sudo apt update && sudo apt install xubuntu-desktop && sudo chmod 777 /home/Area69Lab/
-    - name: Installing Chicago95 theme...
-      run: |
-            echo 'deb http://download.opensuse.org/repositories/home:/bgstack15:/Chicago95/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:bgstack15:Chicago95.list
-            curl -fsSL https://download.opensuse.org/repositories/home:bgstack15:Chicago95/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_bgstack15_Chicago95.gpg > /dev/null
-            sudo apt update
-            sudo apt install chicago95-theme-all
+    #- name: Installing Chicago95 theme...
+     # run: |
+      #      echo 'deb http://download.opensuse.org/repositories/home:/bgstack15:/Chicago95/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:bgstack15:Chicago95.list
+       #     curl -fsSL https://download.opensuse.org/repositories/home:bgstack15:Chicago95/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_bgstack15_Chicago95.gpg > /dev/null
+        #    sudo apt update
+         #   sudo apt install chicago95-theme-all
     - name: Installing Google Chrome Headless
       run: |
            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
